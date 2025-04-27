@@ -1,3 +1,15 @@
+// src/components/Navbar.jsx
+
+import React from 'react';
+
+// First define the style
+const linkStyle = {
+  textDecoration: 'none',
+  color: '#3b7a57',
+  fontWeight: '500',
+  transition: 'color 0.3s ease, transform 0.3s ease',
+};
+
 function Navbar() {
   return (
     <nav style={{
@@ -11,9 +23,14 @@ function Navbar() {
       zIndex: 100,
       width: '100%',
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)', // Optional shadow for elegance
-      backdropFilter: 'blur(10px)', // Optional: adds a subtle blur effect for a glass-like effect
+      backdropFilter: 'blur(10px)', // Subtle glass effect
     }}>
-      <div style={{ fontWeight: 'bold', fontSize: '1.8rem', color: '#2e8b57', letterSpacing: '1px' }}>
+      <div style={{
+        fontWeight: 'bold',
+        fontSize: '1.8rem',
+        color: '#2e8b57',
+        letterSpacing: '1px'
+      }}>
         Bugyal Foundation
       </div>
       <div style={{ display: 'flex', gap: '2rem', fontSize: '1.1rem' }}>
@@ -27,12 +44,5 @@ function Navbar() {
     </nav>
   );
 }
-
-const linkStyle = {
-  textDecoration: 'none',
-  color: '#3b7a57',
-  fontWeight: '500',
-  transition: 'color 0.3s ease, transform 0.3s ease',
-};
 
 export default Navbar;
