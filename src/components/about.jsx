@@ -13,13 +13,18 @@ function About() {
           <div className="about__container grid">
 
             <h2 className="section__title-1 text-5xl font-bold mb-10">
-              <span>About Me.</span>
+              <span>About Us.</span>
             </h2>
 
             <div className="about__perfil mb-10">
               <div className="about__image relative mx-auto w-60 h-60">
                 <img 
-                  src="https://images.unsplash.com/photo-1577565177023-d0f29c354b69?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTI3Njk4OTB8&ixlib=rb-4.0.3&q=85" 
+                  src="student.jpeg" 
+                  alt="profile" 
+                  className="about__img rounded-full object-cover w-full h-full"
+                />
+                 <img 
+                  src="student2.jpeg" 
                   alt="profile" 
                   className="about__img rounded-full object-cover w-full h-full"
                 />
@@ -32,8 +37,9 @@ function About() {
 
             <div className="about__info text-gray-700">
               <p className="about__description mb-6 text-lg">
-                Passionate about creating <b>Web Pages</b> with <b>UI/UX User Interface</b>, 
-                I have years of experience and many clients are happy with the projects carried out.
+              <b>"Let the Hills Learn. Let the Earth Heal."</b> Founded with love for the land and people of the Himalayas, 
+          Bugyal Foundation works to empower rural communities especially in remote and underdeveloped areas. 
+          Our name comes from the word “Bugyal”, meaning alpine meadows in the mountains—a symbol of harmony between nature and life.
               </p>
 
               <ul className="about__list list-disc list-inside mb-6 text-left max-w-md mx-auto">
@@ -42,14 +48,14 @@ function About() {
                 </li>
               </ul>
 
-              <div className="about__buttons flex justify-center gap-6">
+              {/* <div className="about__buttons flex justify-center gap-6">
                 <a href="#contact" className="button flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">
                   <i className="ri-send-plane-line"></i> Contact Me
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="button__ghost flex items-center gap-2 px-4 py-2 border-2 border-green-600 text-green-600 rounded-full hover:bg-green-50 transition">
                   <i className="ri-linkedin-box-line"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
 
           </div>
@@ -58,9 +64,7 @@ function About() {
         {/* ABOUT US INTRO */}
         <h2 className="text-5xl font-extrabold text-green-800 mb-8">About Us</h2>
         <p className="text-xl text-gray-700 mb-6 leading-relaxed font-medium max-w-4xl mx-auto">
-          "Let the Hills Learn. Let the Earth Heal." Founded with love for the land and people of the Himalayas, 
-          Bugyal Foundation works to empower rural communities—especially in remote and underdeveloped areas. 
-          Our name comes from the word “Bugyal”, meaning alpine meadows in the mountains—a symbol of harmony between nature and life.
+         
         </p>
         <p className="text-xl text-gray-700 mb-12 leading-relaxed font-medium max-w-4xl mx-auto">
           We believe that education is a right, not a privilege, and that protecting nature is not optional, but essential. 
